@@ -1,5 +1,6 @@
-package com.qmui.fastquickly.base;
+package com.qmui.fastquickly;
 
+import android.annotation.SuppressLint;
 import android.app.Application;
 import android.content.Context;
 
@@ -19,11 +20,18 @@ import io.reactivex.functions.Consumer;
 import io.reactivex.plugins.RxJavaPlugins;
 import me.jessyan.autosize.AutoSizeConfig;
 
-public class BaseApplication extends Application {
+public class QuickApplication extends Application {
 
+    @SuppressLint("StaticFieldLeak")
+    private static Context context;
+
+    public static Context getContext() {
+        return context;
+    }
     @Override
     public void onCreate() {
         super.onCreate();
+        context = getApplicationContext();
         initConfig();
         initLogger();
     }
