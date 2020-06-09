@@ -26,18 +26,18 @@ android {
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
-    implementation 'androidx.appcompat:appcompat:1.1.0'
-    implementation 'androidx.multidex:multidex:2.0.1'
-    implementation 'me.jessyan:autosize:1.1.2'
-    implementation 'com.alibaba:fastjson:1.1.71.android'
-    implementation 'com.orhanobut:logger:2.2.0'
-    implementation 'com.qmuiteam:qmui:2.0.0-alpha10'
-    implementation "com.qmuiteam:arch:2.0.0-alpha10"
-    implementation 'org.simple:androideventbus:1.0.5.1'
-    implementation 'com.jakewharton:butterknife:10.2.1'
+    api 'androidx.appcompat:appcompat:1.1.0'
+    api 'androidx.multidex:multidex:2.0.1'
+    api 'me.jessyan:autosize:1.1.2'
+    api 'com.alibaba:fastjson:1.1.71.android'
+    api 'com.orhanobut:logger:2.2.0'
+    api 'com.qmuiteam:qmui:2.0.0-alpha10'
+    api "com.qmuiteam:arch:2.0.0-alpha10"
+    api 'org.simple:androideventbus:1.0.5.1'
+    api 'com.jakewharton:butterknife:10.2.1'
     annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.1'
-    implementation 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.4-7'
-    implementation 'de.hdodenhof:circleimageview:3.0.1'
-    implementation 'com.zhouyou:rxeasyhttp:2.1.5'
-    implementation 'com.muddzdev:styleabletoast:2.2.2'
+    api 'com.scwang.smartrefresh:SmartRefreshLayout:1.0.4-7'
+    api 'de.hdodenhof:circleimageview:3.0.1'
+    api 'com.zhouyou:rxeasyhttp:2.1.5'
+    api 'com.muddzdev:styleabletoast:2.2.2'
 }
