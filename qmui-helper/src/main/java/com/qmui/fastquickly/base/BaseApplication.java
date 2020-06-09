@@ -10,12 +10,21 @@ import com.orhanobut.logger.FormatStrategy;
 import com.orhanobut.logger.Logger;
 import com.orhanobut.logger.PrettyFormatStrategy;
 import com.qmui.fastquickly.R;
+import com.qmuiteam.qmui.arch.QMUISwipeBackActivityManager;
+import com.zhouyou.http.EasyHttp;
+
+import java.util.Objects;
+
+import io.reactivex.functions.Consumer;
+import io.reactivex.plugins.RxJavaPlugins;
+import me.jessyan.autosize.AutoSizeConfig;
 
 public class BaseApplication extends Application {
 
     @Override
     public void onCreate() {
         super.onCreate();
+        initConfig();
         initLogger();
     }
 
@@ -25,8 +34,21 @@ public class BaseApplication extends Application {
                 .tag(getTag())   // (Optional) Global tag for every log. Default PRETTY_LOGGER
                 .build();
         Logger.addLogAdapter(new AndroidLogAdapter(formatStrategy));
+
     }
 
+    private void initConfig(){
+        QMUISwipeBackActivityManager.init(this);
+        EasyHttp.init(this);
+        RxJavaPlugins.setErrorHandler(new Consumer<Throwable>() {
+            @Override
+            public void accept(Throwable throwable) throws Exception {
+                Logger.e(throwable, Objects.requireNonNull(throwable.getMessage()));
+            }
+        });
+        AutoSizeConfig.getInstance()
+                .setExcludeFontScale(true);
+    }
 
     @Override
     protected void attachBaseContext(Context base) {
