@@ -1,9 +1,9 @@
-package com.qmui.fastquickly.helper;
+package com.qmui.quick.helper;
 
 import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
-import com.qmui.fastquickly.QuickApplication;
+import com.qmui.quick.QuickApplication;
 
 public class QuickImageHelper {
 

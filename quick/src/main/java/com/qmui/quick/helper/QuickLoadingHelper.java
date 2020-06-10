@@ -1,4 +1,4 @@
-package com.qmui.fastquickly.helper;
+package com.qmui.quick.helper;
 
 import android.app.Activity;
 import android.app.Dialog;

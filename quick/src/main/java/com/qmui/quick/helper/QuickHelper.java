@@ -1,7 +1,5 @@
-package com.qmui.fastquickly.helper;
+package com.qmui.quick.helper;
 
-import android.app.Activity;
-import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -14,7 +12,7 @@ import android.view.View;
 
 import androidx.core.content.FileProvider;
 
-import com.qmui.fastquickly.QuickApplication;
+import com.qmui.quick.QuickApplication;
 
 import java.io.File;
 import java.util.List;

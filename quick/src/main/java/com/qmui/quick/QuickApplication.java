@@ -1,4 +1,4 @@
-package com.qmui.fastquickly;
+package com.qmui.quick;
 
 import android.annotation.SuppressLint;
 import android.app.Application;
@@ -10,7 +10,7 @@ import com.orhanobut.logger.AndroidLogAdapter;
 import com.orhanobut.logger.FormatStrategy;
 import com.orhanobut.logger.Logger;
 import com.orhanobut.logger.PrettyFormatStrategy;
-import com.qmui.fastquickly.R;
+import com.qmui.quick.R;
 import com.qmuiteam.qmui.arch.QMUISwipeBackActivityManager;
 import com.zhouyou.http.EasyHttp;
 

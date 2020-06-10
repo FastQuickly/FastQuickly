@@ -1,18 +1,13 @@
-package com.qmui.fastquickly.base;
+package com.qmui.quick.base;
 
-import android.annotation.SuppressLint;
 import android.content.res.Configuration;
 import android.content.res.Resources;
-import android.os.Build;
 import android.os.Bundle;
-import android.util.Log;
 
 import androidx.annotation.Nullable;
-import androidx.annotation.RequiresApi;
 
 import com.orhanobut.logger.Logger;
 import com.qmuiteam.qmui.arch.QMUIActivity;
-import com.qmuiteam.qmui.util.QMUIStatusBarHelper;
 
 import org.simple.eventbus.EventBus;
 

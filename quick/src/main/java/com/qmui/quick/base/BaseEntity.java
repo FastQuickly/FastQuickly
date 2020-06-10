@@ -1,4 +1,4 @@
-package com.qmui.fastquickly.base;
+package com.qmui.quick.base;
 
 
 

@@ -1,6 +1,6 @@
-package com.qmui.fastquickly.helper;
+package com.qmui.quick.helper;
 
-import com.qmui.fastquickly.QuickApplication;
+import com.qmui.quick.QuickApplication;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
