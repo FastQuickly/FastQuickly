@@ -1,10 +1,10 @@
 <resources>
 
-    <style name="AppTheme" parent="QMUI.Compat.NoActionBar">
-        <item name="dialogTheme">@style/DialogTheme</item>
+    <style name="QuickAppTheme" parent="QMUI.Compat.NoActionBar">
+        <item name="dialogTheme">@style/QuickDialogTheme</item>
     </style>
     
-    <style name="DialogTheme" parent="android:style/Theme.Dialog">
+    <style name="QuickDialogTheme" parent="android:style/Theme.Dialog">
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowContentOverlay">@null</item>
         <item name="android:windowFrame">@null</item>
