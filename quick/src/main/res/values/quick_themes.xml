@@ -3,7 +3,6 @@
     <style name="QuickAppTheme" parent="QMUI.Compat.NoActionBar">
         <item name="dialogTheme">@style/QuickDialogTheme</item>
     </style>
-    
     <style name="QuickDialogTheme" parent="android:style/Theme.Dialog">
         <item name="android:windowNoTitle">true</item>
         <item name="android:windowContentOverlay">@null</item>
@@ -11,5 +10,8 @@
         <item name="android:windowIsFloating">true</item>
         <item name="android:backgroundDimEnabled">true</item>
         <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+    <style name="FullScreenTheme" parent="QuickAppTheme">
+        <item name="android:windowFullscreen">true</item>
     </style>
 </resources>
