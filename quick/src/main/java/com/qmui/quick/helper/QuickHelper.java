@@ -7,8 +7,6 @@ import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Build;
-import android.view.LayoutInflater;
-import android.view.View;
 
 import androidx.core.content.FileProvider;
 
@@ -83,9 +81,7 @@ public class QuickHelper {
         context.startActivity(intent);
     }
 
-    public static View createView(Context context,int resource){
-        return LayoutInflater.from(context).inflate(resource,null);
-    }
+
     /*是否是手机号*/
     public static boolean isMobilePhone(String mobiles) {
         /*
