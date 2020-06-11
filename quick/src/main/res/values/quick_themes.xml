@@ -1,7 +1,19 @@
 <resources>
 
     <style name="QuickAppTheme" parent="QMUI.Compat.NoActionBar">
+        <item name="qmui_skin_support_topbar_bg">?attr/qmui_config_color_blue</item>
+        <item name="qmui_skin_support_topbar_separator_color">?attr/qmui_skin_support_color_separator</item>
+        <item name="qmui_skin_support_topbar_title_color">@color/qmui_config_color_white</item>
+        <item name="qmui_skin_support_topbar_subtitle_color">@color/qmui_config_color_white</item>
+        <item name="qmui_skin_support_topbar_image_tint_color">@color/qmui_config_color_white</item>
+        <item name="QMUITopBarStyle">@style/TopBarTheme</item>
         <item name="dialogTheme">@style/QuickDialogTheme</item>
+    </style>
+    <style name="TopBarTheme" parent="QMUI.TopBar">
+        <item name="qmui_topbar_height">48dp</item>
+        <item name="qmui_topbar_image_btn_height">48dp</item>
+        <item name="qmui_topbar_title_bold">false</item>
+        <item name="qmui_topbar_text_btn_bold">true</item>
     </style>
     <style name="QuickDialogTheme" parent="android:style/Theme.Dialog">
         <item name="android:windowNoTitle">true</item>
