@@ -28,7 +28,7 @@ public abstract class BaseActivity extends QMUIActivity {
         }
         int layoutId = getLayoutId();
         if(layoutId == 0){
-            Logger.e("请调用getLayoutId()返回布局");
+            Logger.d("未设定布局文件");
         }else{
             setContentView(layoutId);
             mUnbinder = ButterKnife.bind(this);

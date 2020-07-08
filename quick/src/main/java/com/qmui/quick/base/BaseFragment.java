@@ -28,7 +28,7 @@ public abstract class BaseFragment extends QMUIFragment {
         }
         int layoutId = getLayoutId();
         if (layoutId == 0) {
-            Logger.e("请调用getLayoutId()返回布局");
+            Logger.d("未设定布局文件");
         }else{
             view = LayoutInflater.from(mActivity).inflate(layoutId, null);
             mUnbinder = ButterKnife.bind(this, view);
@@ -63,7 +63,7 @@ public abstract class BaseFragment extends QMUIFragment {
     }
 
     @Override
-    protected int backViewInitOffset() {
+    protected int backViewInitOffset(Context context, int dragDirection, int moveEdge) {
         return QMUIDisplayHelper.dp2px(getContext(), 100);
     }
 
