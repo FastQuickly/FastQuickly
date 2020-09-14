@@ -19,4 +19,11 @@ public class QuickImageLoader {
                 placeholder(R.drawable.quick_image_holder).
                 into(view);
     }
+
+    public static void loadOnHolder(ImageView view, String url, int holder) {
+        Glide.with(QuickApplication.getContext()).load(url).
+                error(holder).
+                placeholder(holder).
+                into(view);
+    }
 }

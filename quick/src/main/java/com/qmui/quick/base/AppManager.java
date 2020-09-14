@@ -68,9 +68,8 @@ public class AppManager {
         activityStack.clear();
     }
 
-    public void exitApp(Context context) {
+    public void exitApp() {
         finishAllActivity();
-
     }
 
 }

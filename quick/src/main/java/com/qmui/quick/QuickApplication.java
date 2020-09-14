@@ -10,7 +10,6 @@ import com.orhanobut.logger.AndroidLogAdapter;
 import com.orhanobut.logger.FormatStrategy;
 import com.orhanobut.logger.Logger;
 import com.orhanobut.logger.PrettyFormatStrategy;
-import com.qmui.quick.R;
 import com.qmuiteam.qmui.arch.QMUISwipeBackActivityManager;
 import com.zhouyou.http.EasyHttp;
 

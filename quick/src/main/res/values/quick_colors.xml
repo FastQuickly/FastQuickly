@@ -2,4 +2,6 @@
 <resources>
     <color name="color000000">#000000</color>
     <color name="colorEEEEEE">#EEEEEE</color>
+    <color name="colorFFFFFF">#FFFFFF</color>
+    <color name="colorAAAAAA">#AAAAAA</color>
 </resources>
